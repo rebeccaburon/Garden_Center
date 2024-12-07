@@ -1,0 +1,41 @@
+####GET BY ID
+GET http://localhost:7000/api/plants/6
+Content-Type: application/json
+
+#### GET ALL
+GET http://localhost:7000/api/plants
+Content-Type: application/json
+
+####GET  BY TYPE
+GET http://localhost:7000/api/plants/Rose
+Content-Type: application/json
+
+####GET PLANT MAXHEIGHT
+GET http://localhost:7000/api/plants/heights/80
+Content-Type: application/json
+
+####GET PLANT BY NAME
+GET http://localhost:7000/api/plants/names/Tree
+Content-Type: application/json
+
+####GET PLANT SORTED BY NAME
+GET http://localhost:7000/api/plants/sorted/Bush
+Content-Type: application/json
+
+#### POST AD
+POST http://localhost:7000/api/plants
+Content-Type: application/json
+
+{
+  "planttype" : "Tree",
+  "name" : "NEW PLANT",
+  "maxheight" : 150,
+  "price": 280.99
+
+}
+########################
+
+
+
+
+

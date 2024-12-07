@@ -1,0 +1,32 @@
+####POST A RESELLER
+POST http://localhost:7000/api/resellerplants/resseller
+Content-Type: application/json
+
+[
+  {
+    "name": "ResellerShop1",
+    "address": "Østerbrogade 22",
+    "phone": 58574896
+  },
+  {
+    "name": "ResellerShop2",
+    "address": "Nørrebrogade 23",
+    "phone": 36598745
+  },
+  {
+    "name": "ResellerShop3",
+    "address": "Frederiksbergade 24",
+    "phone": 35628951
+  }
+]
+
+####GET PLANT BY RESELLER
+GET http://localhost:7000/api/resellerplants/4
+Content-Type: application/json
+
+####PUT, ADD PLANT TO RESELLER
+PUT http://localhost:7000/api/resellerplants/ressellers/4/1
+Content-Type: application/json
+
+####DELETE PLANT
+DELETE http://localhost:7000/api/resellerplants

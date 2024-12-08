@@ -16,6 +16,8 @@ import app.security.entities.User;
 import app.security.exceptions.ApiException;
 import app.security.exceptions.NotAuthorizedException;
 import app.security.exceptions.ValidationException;
+import groovyjarjarantlr4.v4.runtime.misc.NotNull;
+import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
 import io.javalin.security.RouteRole;
@@ -180,4 +182,8 @@ public class SecurityController implements ISecurityController {
             throw new ApiException(HttpStatus.UNAUTHORIZED.getCode(), "Unauthorized. Could not verify token");
         }
     }
+    public void healthCheck(@NotNull Context ctx) {
+        ctx.status(200).json("{\"msg\": \"API is up and running\"}");
+    }
+
 }

@@ -25,7 +25,6 @@ public class PlantRoute {
             put("/ressellers/{resellerid}/{plantid}", plantController::addPlantToReseller);
 
             delete("/plantsd", plantController::deletePlant);
-
         };
 
     }

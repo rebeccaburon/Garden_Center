@@ -89,7 +89,7 @@ public class HibernateConfig {
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + DBName);
+        props.put("hibernate.connection.url", "jdbc:postgresql://165.232.126.75:5432/" + DBName);
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;
